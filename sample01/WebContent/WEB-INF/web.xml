@@ -26,8 +26,36 @@
   <!-- 서블릿 클래스 등록 -->
   <servlet-mapping>
   	<servlet-name>dispatcherServlet</servlet-name>
-  	<url-pattern>/</url-pattern>
+  <!-- 	<url-pattern>/</url-pattern> -->
+  	<url-pattern>*.do</url-pattern>	<!-- *앞에는 마음껏 써라 .do는 무조건 컨트롤러로 간다 -->
   </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <!-- 인코딩(한글설정)한글깨짐 방지 -->	
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>
+			org.springframework.web.filter.CharacterEncodingFilter
+		</filter-class>	
+		
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>		
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern> <!-- 모든파일에 다 적용해라.. -->
+	</filter-mapping>
+  
   
   
   

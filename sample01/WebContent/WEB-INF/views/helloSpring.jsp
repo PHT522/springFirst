@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+여기는 helloSpring.jsp입니다.
 </body>
 </html>

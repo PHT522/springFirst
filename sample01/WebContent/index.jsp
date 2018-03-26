@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<!-- 
 <a href="./hello">hello 스프링</a>
+ -->
 
+<a href="login.do">로그인</a>
 
 </body>
 </html>
