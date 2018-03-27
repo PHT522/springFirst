@@ -21,6 +21,8 @@
   		<param-name>contextConfigLocation</param-name>
   		<param-value>/WEB-INF/spring/dispatcherServlet.xml</param-value>
   	</init-param>
+  	
+  	<load-on-startup>1</load-on-startup>	<!-- 여기가 1번째이다 -->
   </servlet>
   
   <!-- 서블릿 클래스 등록 -->
